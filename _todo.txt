@@ -1,0 +1,11 @@
+<!-- /**
+ * ModuleAndSlices Addon
+ * @author sven[ät]koalashome[punkt]de Sven Eichler
+ * @package redaxo3
+ * @version $Id: _todo.txt,v 1.1 2007/10/22 21:41:23 koala_s Exp $
+ */ -->
+
+ToDo
+
+Die Ausgabe sieht gresslich aus.
+... nun ja, es funktioniert aber technisch soweit ...

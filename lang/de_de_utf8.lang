@@ -1,0 +1,24 @@
+#
+# ModuleAndSlices Addon
+# @author sven[ät]koalashome[punkt]de Sven Eichler
+# @package redaxo3
+# @version $Id: de_de.lang 54 2007-01-28 23:20:22Z koala $
+#
+
+
+menu_title_mod_and_sli = Module und Slices
+menu_title_art_and_temp = Artikel und Templates
+menu_title_statistik_module = Statistik::Module
+menu_title_statistik_templates = Statistik::Templates
+menu_title_statistik_actions = Statistik::Actions
+
+
+error_datenuebergabe = Es gab ein Problem bei der Datenübergabe.
+
+form_button_send = Modul wechseln
+update_erfolgt = Update von SliceID: #SLICEID# - ModulID alt: #MODULIDOLD# zu ModulID neu: #MODULIDNEU#
+
+
+art_and_temp_form_button_send = Template wechseln
+art_and_temp_update_erfolgt = Update von ArticleID: #ARTICLEID# - TemplateID alt: #TEMPLATEIDOLD# zu TemplateID neu: #TEMPLATEIDNEU#
+

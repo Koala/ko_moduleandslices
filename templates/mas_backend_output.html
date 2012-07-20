@@ -1,0 +1,47 @@
+<div style="text-align:center; width:770px;">
+  Eingabefelder werden in der Suche mit UND verkn&#252;pft.<br />
+  Soll alles angezeigt werden, starte die Suche ohne jegliche Eingabe.<br />
+  <form action="index.php?page=ko_moduleandslices" method="post" name="REX_FORM">
+    <p>Suche nach
+    ArtikelID: <input name="suche_articleid" type="text" size="3" maxlength="5"> und
+    SliceID: <input name="suche_sliceid" type="text" size="3" maxlength="5"> und
+    ModulID: <input name="suche_modulid" type="text" size="3" maxlength="5">
+    &#160;&#160;<input type="submit" name="suche" value="Suchen"></p>
+  </form>
+</div>
+<script type="text/javascript">
+  <!--
+  document.REX_FORM.suche_articleid.focus();
+  //-->
+</script>
+
+{AUSGABEVORHANDEN_BEGINN}
+<table class="rexHeader" cellspacing="0" cellpadding="3" border="0">
+  <thead>
+  <tr>
+    <td align="left">ARTICLE-ID - Name</td>
+    <td align="center">SLICE-ID</td>
+    <td align="center">MODULE-ID</td>
+    <td align="center">[ModulID] - Module</td>
+    <td align="center">&#160;</td>
+  </tr>
+  </thead>
+  <tbody>
+  <!-- BEGIN EintragsUebersicht -->
+  <tr>
+    <form action="index.php?page=ko_moduleandslices" method="post" name="REX_FORM">
+    <td align="left">{ARTICLEID}</td>
+    <td align="center">{SLICEID}</td>
+    <td align="center">{MODULTYPID}</td>
+    <td align="center">{MODUL}</td>
+    <td align="center">
+        <input type="hidden" name="slice_id" value="{HIDDEN_SLICEID}">
+        <input type="hidden" name="modul_id_old" value="{HIDDEN_MODULIDOLD}">
+        <input type="submit" name="modulwechsel" value="[{SENDBUTTON}]">
+    </td>
+    </form>
+  </tr>
+  <!-- END EintragsUebersicht -->
+  </tbody>
+</table>
+{AUSGABEVORHANDEN_ENDE}

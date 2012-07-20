@@ -1,0 +1,44 @@
+<div style="text-align:center; width:770px;">
+  Eingabefelder werden in der Suche mit UND verkn&#252;pft.<br />
+  Soll alles angezeigt werden, starte die Suche ohne jegliche Eingabe.<br />
+  <form action="index.php?page=ko_moduleandslices&amp;subpage=templates" method="post" name="REX_FORM">
+    <p>Suche nach
+    ArtikelID: <input name="suche_articleid" type="text" size="3" maxlength="5"> und
+    TemplateID: <input name="suche_templateid" type="text" size="3" maxlength="5">
+    &#160;&#160;<input type="submit" name="suche" value="Suchen"></p>
+  </form>
+</div>
+<script type="text/javascript">
+  <!--
+  document.REX_FORM.suche_articleid.focus();
+  //-->
+</script>
+
+{AUSGABEVORHANDEN_BEGINN}
+<table class="rexHeader" cellspacing="0" cellpadding="3" border="0">
+  <thead>
+  <tr>
+    <td align="left">ARTICLEID - Name</td>
+    <td align="center">TEMPLATEID</td>
+    <td align="center">[TemplateID] - Template</td>
+    <td align="center">&#160;</td>
+  </tr>
+  </thead>
+  <tbody>
+  <!-- BEGIN EintragsUebersicht -->
+  <tr>
+    <form action="index.php?page=ko_moduleandslices&amp;subpage=templates" method="post" name="REX_FORM">
+    <td align="left">{ARTICLEID}</td>
+    <td align="center">{TEMPLATETYPID}</td>
+    <td align="center">{TEMPLATE}</td>
+    <td align="center">
+        <input type="hidden" name="article_id" value="{HIDDEN_ARTICLEID}">
+        <input type="hidden" name="template_id_old" value="{HIDDEN_TEMPLATEIDOLD}">
+        <input type="submit" name="templatewechsel" value="[{SENDBUTTON}]">
+    </td>
+  </form>
+  </tr>
+  <!-- END EintragsUebersicht -->
+  </tbody>
+</table>
+{AUSGABEVORHANDEN_ENDE}

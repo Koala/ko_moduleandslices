@@ -1,0 +1,31 @@
+<!-- /**
+ * ModuleAndSlices Addon
+ * @author sven[ät]koalashome[punkt]de Sven Eichler
+ * @package redaxo3
+ * @version $Id: _changelog.txt,v 1.1 2007/10/22 21:41:23 koala_s Exp $
+ */ -->
+<a href="?page=addon&amp;spage=help&amp;addonname=moduleandslices">ReadMe</a>
+
+<strong>ChangeLog</strong>
+
+<em>22.10.2007 - 0.0.7</em>
+- Anpassungen für REDAXO 4.0
+
+<em>29.01.2007 - 0.0.6</em>
+- Statistiken über die Verwendungshäufigkeiten von Modulen, Templates und Actions eingebaut
+
+<em>28.01.2007</em>
+- Artikelnamen werden nun in gekürzter Form ebenfalls mit ausgegeben
+
+<em>28.01.2007</em>
+- über die ArtikelID kann nun direkt zu einem Artikel gesprungen werden
+  (der Artikelname wird beim überfahren des Links als Tooltip angezeigt)
+- Sonderzeichen und Umlaute werden nun in ihre HTML-Entsprechung umgewandelt
+- NEU "Article And Template" - wechseln von Templates eines Artikels
+
+
+<em>27.01.2007</em>
+- Fehler bei Templateklasseneinbindung gefixt (falscher Pfad)
+
+<em>14.01.2007</em>
+first release
